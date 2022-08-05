@@ -1,0 +1,219 @@
+.flex-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+}
+.sec2 {padding-top: 35px;} 
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.flex-container div.flex-slide {
+  border: 11px solid #111213;
+  padding: 30px;
+}
+.flex-title {
+  color: #f1f1f1;
+  position: relative;
+  font-size: 25px;
+  margin: auto;
+  text-align: center;
+  transform: rotate(0deg);
+  top: 15%;
+  line-height: 36px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .flex-title {
+    transform: rotate(0deg) !important;
+  }
+}
+
+.flex-about {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  opacity: 0;
+  color: #f1f1f1;
+  position: relative;
+  width: 90%;
+  font-size: 17px;
+  padding: 5%;
+  top: 10%;
+  border-radius: 10px;
+  line-height:26px;
+  margin: auto;
+  text-align: left;
+  transform: rotate(0deg);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.flex-about h5 {padding: 0;margin: 0;}
+.flex-about h3 {
+  padding-bottom: 0;
+  margin-bottom: 13px;
+  color: #1acc8d;
+}
+@media screen and (max-width: 768px) {
+  .flex-about {
+    padding: 0%;
+    border: 0px solid #f1f1f1;
+  }
+}
+
+.flex-slide {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+@media screen and (max-width: 768px) {
+  .flex-slide {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-slide p {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-slide ul li {
+    font-size: 2em;
+  }
+}
+.flex-slide:hover {
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+.flexBox1 {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  .flexBox1 {
+    animation: flexBox2FlexSlide 3s 1;
+    animation-delay: 0s;
+  }
+}
+@keyframes flexBox2FlexSlide {
+  0% {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+  50% {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+  }
+  100% {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+}
+ 
+
+@keyframes flexBox1Flextitle {
+  0% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+  50% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+}
+.flex-about-flexBox1 {
+  opacity: 0;
+}
+.flex-slide img {
+  max-width: 60px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+@media screen and (min-width: 768px) {
+  .flex-about-flexBox1 {
+    animation: flexBox2FlexSlide 3s 1;
+    animation-delay: 0s;
+  }
+}
+
+@keyframes flexAboutflexBox1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.flexBox2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.flexBox4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.flexBox3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.flexBox3:hover .flex-about{opacity: 1 !important;}
+
+
+@media(max-width:991px){
+  .flex-container {
+    flex-direction: unset;
+}
+#hero h2 {
+  margin-top: 40px;
+}
+.flex-container {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.flexBox1 {
+  height: auto;
+}
+.flex-slide p {
+  font-size: 19px;
+}
+.flex-about {
+  opacity: 1 !important;
+}
+}
